@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Sanchez&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    height: 48px;
+    background-color: black;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+/* Navigation Bar: Logo  */
+.logo {
+    padding: 7px 8px;
+    display: flex;
+}
+
+.logo img {
+    height: 33px;
+    width: 33px;
+}
+/* Navigation Bar: Search Bar  */
+#searchBar{
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    color: white;
+    width: 150px;
+    height: 20px;
+    padding: 0px 20px;
+    
+}
+#search{
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+::placeholder {
+    color: whitesmoke;
+    padding: 0px 40px;
+    text-transform: uppercase;
+  }
+
+
+h3 {
+    font-weight: bolder;
+    color: white;
+    padding: 12px 4px;
+    margin: 0;
+}
+
+/* Navigation Listing */
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+}
+
+#navbar ul li {
+    
+    font-family: 'Voces';
+    color: whitesmoke;
+    text-decoration: none;
+    list-style: none;
+    padding: 0px 3  px;
+    margin: 0px 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* Section Container */
+#container {
+    font-family: 'Sanchez', serif;
+    display: flex;
+    position: absolute;
+    top: 80px;
+    left: 15%;
+    min-height: 70vh;
+    width: 70%;
+    background-color: red;
+    background: url(/img/spotify_bg.webp) no-repeat center center/cover;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#container h1 {
+    
+    margin-left: 43px;
+    color: white;
+}
+
+
+.songItemContainer{
+    margin: 20px 0;
+    margin-left: 43px;
+}
+.songItem{
+    display: flex;
+    height: 38px;
+    background-color: white;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    justify-content: space-between;
+    margin: 5px 0;
+    border-radius: 30px;
+
+
+} 
+ .songItem img{
+    border-radius: 20px;
+    width: 30px;
+    margin: 0 13px;
+    
+}
+
+.timestamp i{
+    cursor: pointer;
+    margin: 10px 10px;
+}
+
+
+
+    
+
+/* Botton section  */
+#bottom {
+    font-family: 'Baloo Bhai 2', cursive;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 13vh;
+    bottom: 0;
+    justify-content: center;
+    color: white;
+
+}
+#myProgressBar {
+    width: 80vw;
+    cursor: pointer;
+}
+.icons{
+    padding: 5px;
+}
+.icons i{
+    cursor: pointer;
+    margin: 0 2px;
+    
+}
+
+
+.songinfo{
+    font-family: 'Crimson Pro', serif;
+    position: absolute;
+    left: 10%;
+}
+
+.songinfo img {
+    opacity: 0;
+    transition: opacity 0.8s ease-in;
+}
