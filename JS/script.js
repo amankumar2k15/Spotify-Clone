@@ -1,4 +1,4 @@
-console.log("Welcome to Spotify")
+// console.log("Welcome to Spotify")
 
 
 // Initializing the variables
@@ -23,10 +23,10 @@ let songs = [
     { songName: "Tumse pyaar karke", filePath: "songs/10.mp3", coverPath: "cover/10.jpg" }
 ]
 
-songItems.forEach((element, i) => {
-    // console.log(element, i);
-    element.getElementsByTagName("img")[0].src = songs[i].coverPath;
-    element.getElementsByClassName("songName")[0].innerText = songs[i].songName;
+songItems.forEach((element, index) => {
+    // console.log(element, index);
+    element.getElementsByTagName("img")[0].src = songs[index].coverPath;
+    element.getElementsByClassName("songName")[0].innerHTML = songs[index].songName;
 });
 
 // Handle Play & Pause Click
